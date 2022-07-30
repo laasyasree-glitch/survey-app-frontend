@@ -94,7 +94,7 @@ function createSurvey(question){
     optionContainerElement.appendChild(option4);
 
     let correctAnswer = document.createElement("p");
-    correctAnswer.classList.add("option")
+    correctAnswer.classList.add("option","ans")
     correctAnswer.textContent=`Correct Answer : ${question.correctAnswer}`;
     surveyElement.appendChild(correctAnswer);
 

@@ -67,7 +67,9 @@ li{
 .line{
     background-color: black;
 }
-
+.ans{
+    font-weight: 600;
+}
 @media screen and (orientation:portrait) {
     .text-container{
         margin: 0%;
