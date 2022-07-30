@@ -30,6 +30,14 @@
     padding: 2%;
     border-radius: 15px;
 }
+@media screen and (max-width:767px) {
+    .card-1{
+        width: 100%;
+    }
+    .card-2{
+        width: 100%;
+    }
+}
 .authenticate-heading{
     font-size: 45px;
     text-align: center;
