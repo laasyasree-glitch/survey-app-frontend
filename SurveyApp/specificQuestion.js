@@ -57,6 +57,10 @@ function createSurvey(question){
     surveyElement.classList.add("question")
     surveyItemsContainerEl1.appendChild(surveyElement);
 
+    let line1 = document.createElement("hr")
+    line1.classList.add("line")
+    surveyElement.appendChild(line1)
+
     let questionId = document.createElement("p");
     questionId.textContent=question.id+". ";
     surveyElement.appendChild(questionId);
@@ -93,4 +97,8 @@ function createSurvey(question){
     correctAnswer.classList.add("option")
     correctAnswer.textContent=`Correct Answer : ${question.correctAnswer}`;
     surveyElement.appendChild(correctAnswer);
+
+    let line = document.createElement("hr")
+    line.classList.add("line")
+    surveyElement.appendChild(line)
 }

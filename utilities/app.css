@@ -64,6 +64,9 @@ li{
     margin: 0%;
     list-style-type: lower-alpha;
 }
+.line{
+    background-color: black;
+}
 
 @media screen and (orientation:portrait) {
     .text-container{
