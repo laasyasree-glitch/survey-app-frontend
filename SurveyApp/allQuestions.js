@@ -54,6 +54,7 @@ myFormEl.addEventListener("submit", function(event) {
 
 function createSurvey(question){
     let surveyElement = document.createElement("li");
+    surveyElement.classList.add("question")
     surveyItemsContainerEl1.appendChild(surveyElement);
 
     let questionId = document.createElement("p");
@@ -69,22 +70,27 @@ function createSurvey(question){
     surveyElement.appendChild(optionContainerElement);
 
     let option1 = document.createElement("li");
+    option1.classList.add("option")
     option1.textContent=question.option1;
     optionContainerElement.appendChild(option1);
 
     let option2 = document.createElement("li");
+    option2.classList.add("option")
     option2.textContent=question.option2;
     optionContainerElement.appendChild(option2);
 
     let option3 = document.createElement("li");
+    option3.classList.add("option")
     option3.textContent=question.option3;
     optionContainerElement.appendChild(option3);
 
     let option4 = document.createElement("li");
+    option4.classList.add("option")
     option4.textContent=question.option4;
     optionContainerElement.appendChild(option4);
 
     let correctAnswer = document.createElement("p");
+    correctAnswer.classList.add("option")
     correctAnswer.textContent=`Correct Answer : ${question.correctAnswer}`;
     surveyElement.appendChild(correctAnswer);
 }
