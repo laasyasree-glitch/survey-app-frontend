@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../utilities/app.css">
+</head>
+
+<body>
+
+<div class="text-container">
+    <div class="card-2" id="container">
+        <h1 class="authenticate-heading">Add User</h1>
+        <form id="myForm">
+            <div class="mb-3">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" id="username" />
+                <p id="usernameErrMsg"></p>
+            </div>
+            <div class="mb-3">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" />
+                <p id="passwordErrMsg"></p>
+            </div>
+           
+            <button class="btn btn-dark">Submit</button>
+        </form>
+        <h1 id="InvalidCredentials"></h1>
+    </div>
+    <div class="d-none mt-5 mb-5" id="spinner">
+        <div class="d-flex flex-row justify-content-center">
+            <div class="spinner-border" role="status">
+                <span id='spinner' class="sr-only">Loading...</span>
+            </div>
+        </div>
+    </div>
+   
+</div>
+<script src="authenticate.js"></script>
+</body>
+
+</html>
